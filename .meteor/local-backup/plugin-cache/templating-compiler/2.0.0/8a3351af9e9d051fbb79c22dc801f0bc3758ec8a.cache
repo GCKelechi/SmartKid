@@ -1,0 +1,1 @@
+{"head":"","body":"","js":"\nTemplate.__checkName(\"babyMode\");\nTemplate[\"babyMode\"] = new Template(\"Template.babyMode\", (function() {\n  var view = this;\n  return HTML.Raw(\"<div>\\n    <h2>Baby Mode</h2>\\n    \\x3c!-- Your UI elements here --\\x3e\\n  </div>\");\n}));\n","bodyAttrs":{}}

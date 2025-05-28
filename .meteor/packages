@@ -1,1 +1,8 @@
 blaze-html-templates
+ecmascript@0.16.10
+mongo@2.1.1
+standard-minifier-css
+standard-minifier-js
+shell-server
+dynamic-import
+jquery
