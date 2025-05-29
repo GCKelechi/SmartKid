@@ -1,0 +1,63 @@
+{
+  "age1": [
+    {
+      "type": "letter-sound",
+      "title": "A for Apple",
+      "letter": "A",
+      "image": "images/literacy/a_apple.png",
+      "audio": "audio/letters/a.mp3"
+    },
+    {
+      "type": "image-association",
+      "title": "Find the B Sound",
+      "letter": "B",
+      "options": [
+        {
+          "image": "images/literacy/ball.png",
+          "isCorrect": true
+        },
+        {
+          "image": "images/literacy/cat.png",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "age4": [
+    {
+      "type": "alphabet-tracing",
+      "title": "Trace the Letter C",
+      "letter": "C",
+      "tracingImage": "images/literacy/trace_c.png"
+    },
+    {
+      "type": "simple-story",
+      "title": "Sam the Cat",
+      "text": "Sam is a cat. Sam likes to nap. Sam naps on a mat.",
+      "audio": "audio/stories/sam_the_cat.mp3"
+    }
+  ],
+  "age7": [
+    {
+      "type": "comprehension",
+      "title": "Reading Practice",
+      "text": "Tom went to the park. He played on the swing. He had fun.",
+      "question": "Where did Tom go?",
+      "options": ["School", "Park", "Home"],
+      "answer": "Park"
+    },
+    {
+      "type": "sentence-builder",
+      "title": "Form a Sentence",
+      "words": ["likes", "She", "reading"],
+      "correctOrder": ["She", "likes", "reading"]
+    },
+    {
+      "type": "spelling",
+      "title": "Spell the Word",
+      "image": "images/literacy/dog.png",
+      "correctWord": "dog",
+      "letters": ["d", "o", "g", "c", "t"]
+    }
+  ]
+}

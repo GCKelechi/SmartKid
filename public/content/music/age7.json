@@ -1,0 +1,16 @@
+{
+  "lessons": [
+    {
+      "title": "Identify Notes",
+      "question": "Which note is this sound?",
+      "audio": "c_note.mp3",
+      "options": ["C", "D", "E", "F"],
+      "answer": "C"
+    },
+    {
+      "title": "Rhythm Practice",
+      "question": "Tap to repeat this rhythm.",
+      "audio": "rhythm1.mp3"
+    }
+  ]
+}

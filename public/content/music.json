@@ -1,0 +1,80 @@
+{
+  "age1": [
+    {
+      "type": "tap-sound",
+      "title": "Tap to Hear Instruments",
+      "instruments": [
+        { "name": "drum", "image": "images/music/drum.png", "sound": "audio/music/drum.mp3" },
+        { "name": "piano", "image": "images/music/piano.png", "sound": "audio/music/piano.mp3" },
+        { "name": "guitar", "image": "images/music/guitar.png", "sound": "audio/music/guitar.mp3" }
+      ]
+    }
+  ],
+  "age4": [
+    {
+      "type": "match-sound",
+      "title": "Match Sound to Instrument",
+      "pairs": [
+        {
+          "sound": "audio/music/violin.mp3",
+          "options": [
+            { "image": "images/music/violin.png", "isCorrect": true },
+            { "image": "images/music/trumpet.png", "isCorrect": false }
+          ]
+        },
+        {
+          "sound": "audio/music/flute.mp3",
+          "options": [
+            { "image": "images/music/flute.png", "isCorrect": true },
+            { "image": "images/music/drum.png", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "play-notes",
+      "title": "Tap to Play Notes",
+      "notes": ["C", "D", "E", "F", "G"],
+      "sounds": [
+        "audio/music/note_C.mp3",
+        "audio/music/note_D.mp3",
+        "audio/music/note_E.mp3",
+        "audio/music/note_F.mp3",
+        "audio/music/note_G.mp3"
+      ]
+    }
+  ],
+  "age7": [
+    {
+      "type": "learn-rhythm",
+      "title": "Follow the Rhythm",
+      "steps": [
+        { "beat": "clap", "count": 4 },
+        { "beat": "tap", "count": 2 }
+      ],
+      "audio": "audio/music/rhythm_pattern.mp3"
+    },
+    {
+      "type": "play-tune",
+      "title": "Play Twinkle Twinkle",
+      "notes": ["C", "C", "G", "G", "A", "A", "G"],
+      "audioGuide": "audio/music/twinkle_guide.mp3"
+    },
+    {
+      "type": "note-identification",
+      "title": "Which Note is This?",
+      "quizzes": [
+        {
+          "sound": "audio/music/note_E.mp3",
+          "options": ["C", "E", "G"],
+          "correct": "E"
+        },
+        {
+          "sound": "audio/music/note_G.mp3",
+          "options": ["F", "G", "A"],
+          "correct": "G"
+        }
+      ]
+    }
+  ]
+}

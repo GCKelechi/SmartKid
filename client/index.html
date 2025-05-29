@@ -1,7 +1,19 @@
-<!-- Use the standard HTML <body> to render your template -->
 <body>
+  {{> navbar }}
   {{> homePage }}
 </body>
+
+<template name="navbar">
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#" class="nav-brand">SmartKid</a>
+    </div>
+    <div class="nav-right">
+      <button id="login-btn" class="btn">Log In</button>
+      <button id="logout-btn" class="btn" style="display:none;">Log Out</button>
+    </div>
+  </nav>
+</template>
 
 <template name="homePage">
   <div class="container">

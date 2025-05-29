@@ -1,10 +1,9 @@
-// juniorMode.js
-Template.juniorMode.events({
-  'click .abc-letter': function(event) {
-    const letter = event.currentTarget.dataset.letter;
-    const sound = new Howl({
-      src: [`audio/letters/${letter}.mp3`]
-    });
-    sound.play();
-  }
-});
+<template name="juniorMode">
+  <div>
+    <h2>Junior Mode</h2>
+    <div class="abc-letter" data-letter="A">A</div>
+    <div class="abc-letter" data-letter="B">B</div>
+    <div class="abc-letter" data-letter="C">C</div>
+    <!-- Add more letters as needed -->
+  </div>
+</template>

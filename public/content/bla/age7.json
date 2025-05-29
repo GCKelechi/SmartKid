@@ -1,0 +1,21 @@
+[
+  {
+    "type": "story-quiz",
+    "title": "The Good Samaritan",
+    "story": "A man was traveling when robbers attacked him. A priest and a Levite passed him, but did not help. A Samaritan stopped, helped him, and took care of him.",
+    "question": "Who helped the man who was hurt?",
+    "options": ["The Priest", "The Levite", "The Samaritan", "The Robbers"],
+    "correctAnswer": "The Samaritan"
+  },
+  {
+    "type": "memory-verse",
+    "verse": "Love your neighbor as yourself.",
+    "reference": "Luke 10:27"
+  },
+  {
+    "type": "puzzle",
+    "title": "Bible Puzzle",
+    "instruction": "Rearrange the letters to spell a Bible character: _ E _ _ S",
+    "answer": "JESUS"
+  }
+]

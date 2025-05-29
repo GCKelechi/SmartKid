@@ -2,6 +2,20 @@
   <div>
     <h2>Explorer Mode</h2>
 
+    <!-- Subject Selection Menu -->
+    <div class="subject-selector">
+      <h3>Select a Subject</h3>
+      <button class="btn subject-btn" data-subject="maths">Maths</button>
+      <button class="btn subject-btn" data-subject="literacy">Literacy</button>
+      <button class="btn subject-btn" data-subject="fineart">Fine Art</button>
+      <button class="btn subject-btn" data-subject="music">Music</button>
+      <button class="btn subject-btn" data-subject="bla">Bible Learning</button>
+    </div>
+
+    <!-- Subject Content Area -->
+    <div id="subject-content"></div>
+
+    <!-- Example Math Question -->
     <div class="math-question">
       <label for="answer-input">What is 2 + 2?</label>
       <input type="number" id="answer-input" placeholder="Enter your answer" />
@@ -9,7 +23,5 @@
     </div>
 
     <div id="feedback" style="margin-top: 10px; font-weight: bold;"></div>
-
-    <!-- Additional UI elements here -->
   </div>
 </template>

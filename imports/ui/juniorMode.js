@@ -1,14 +1,13 @@
-// juniorMode.js
+import { Template } from 'meteor/templating';
+import './juniorMode.html';
+import { Howl } from 'howler';
+
 Template.juniorMode.events({
-  'click .abc-letter': function(event) {
+  'click .abc-letter'(event) {
     const letter = event.currentTarget.dataset.letter;
-
-    // Example logic for letter tracing (stub)
-    console.log(`Tracing letter: ${letter}`);
-
-    // Provide feedback (e.g., visual or audio)
-    alert(`Great! You clicked on letter ${letter}. Keep practicing!`);
-
-    // You could add more complex tracing logic here, e.g., drawing on canvas
+    const sound = new Howl({
+      src: [`audio/letters/${letter}.mp3`]
+    });
+    sound.play();
   }
 });

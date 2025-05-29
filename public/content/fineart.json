@@ -1,0 +1,58 @@
+{
+  "age1": [
+    {
+      "type": "color-splash",
+      "title": "Tap to Splash Color",
+      "colors": ["red", "blue", "yellow", "green"],
+      "audio": "audio/fineart/colors_intro.mp3"
+    },
+    {
+      "type": "shape-recognition",
+      "title": "Identify the Circle",
+      "shapes": [
+        { "image": "images/fineart/circle.png", "isCorrect": true },
+        { "image": "images/fineart/square.png", "isCorrect": false }
+      ]
+    }
+  ],
+  "age4": [
+    {
+      "type": "drag-to-color",
+      "title": "Color the Dog",
+      "image": "images/fineart/dog_outline.png",
+      "colors": ["brown", "black", "white"],
+      "audio": "audio/fineart/color_the_dog.mp3"
+    },
+    {
+      "type": "shape-puzzle",
+      "title": "Match the Shapes",
+      "pieces": [
+        { "shape": "circle", "slot": "slot_circle.png" },
+        { "shape": "triangle", "slot": "slot_triangle.png" }
+      ]
+    }
+  ],
+  "age7": [
+    {
+      "type": "drawing-lesson",
+      "title": "Draw a House",
+      "steps": [
+        "Draw a square for the house body",
+        "Add a triangle for the roof",
+        "Add windows and a door"
+      ],
+      "exampleImage": "images/fineart/draw_house.png"
+    },
+    {
+      "type": "recreate-image",
+      "title": "Copy the Butterfly",
+      "image": "images/fineart/butterfly_sample.png"
+    },
+    {
+      "type": "art-tool-intro",
+      "title": "Learn the Brush Tool",
+      "tool": "brush",
+      "instructions": "Use the brush tool to paint freely with selected colors."
+    }
+  ]
+}

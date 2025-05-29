@@ -1,0 +1,53 @@
+{
+  "age1": {
+    "activities": [
+      {
+        "type": "letter-sounds",
+        "title": "Learn Letter Sounds",
+        "letters": ["A", "B", "C"],
+        "images": ["apple", "ball", "cat"]
+      }
+    ]
+  },
+  "age4": {
+    "activities": [
+      {
+        "type": "alphabet",
+        "title": "Alphabet Basics",
+        "description": "Tap each letter to hear its name."
+      },
+      {
+        "type": "simple-words",
+        "title": "Word Learning",
+        "examples": ["dog", "sun", "bat"]
+      },
+      {
+        "type": "stories",
+        "title": "Short Stories",
+        "narrated": true
+      }
+    ]
+  },
+  "age7": {
+    "activities": [
+      {
+        "type": "comprehension",
+        "title": "Reading Comprehension",
+        "questions": [
+          "What is the main idea?",
+          "Who are the characters?"
+        ]
+      },
+      {
+        "type": "sentence-formation",
+        "title": "Form Sentences",
+        "example": "The cat ___ on the mat."
+      },
+      {
+        "type": "spelling",
+        "title": "Spelling Practice",
+        "words": ["elephant", "butterfly", "school"]
+      }
+    ]
+  }
+}

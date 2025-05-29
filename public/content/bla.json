@@ -1,0 +1,87 @@
+{
+  "age1": [
+    {
+      "type": "song",
+      "title": "Jesus Loves Me",
+      "audio": "audio/bible/jesus_loves_me.mp3",
+      "image": "images/bible/jesus_loves_me.png"
+    },
+    {
+      "type": "tap-story",
+      "title": "Noah’s Ark",
+      "image": "images/bible/noahs_ark.png",
+      "hotspots": [
+        {
+          "name": "Elephant",
+          "sound": "audio/animals/elephant.mp3",
+          "position": { "x": 120, "y": 200 }
+        },
+        {
+          "name": "Lion",
+          "sound": "audio/animals/lion.mp3",
+          "position": { "x": 320, "y": 180 }
+        }
+      ]
+    }
+  ],
+  "age4": [
+    {
+      "type": "picture-story",
+      "title": "David and Goliath",
+      "pages": [
+        {
+          "image": "images/bible/david_1.png",
+          "text": "David trusted God and faced the giant Goliath."
+        },
+        {
+          "image": "images/bible/david_2.png",
+          "text": "He used a sling to defeat him!"
+        }
+      ]
+    },
+    {
+      "type": "name-matching",
+      "title": "Match Bible Characters",
+      "pairs": [
+        {
+          "image": "images/bible/moses.png",
+          "name": "Moses"
+        },
+        {
+          "image": "images/bible/jesus.png",
+          "name": "Jesus"
+        }
+      ]
+    }
+  ],
+  "age7": [
+    {
+      "type": "bible-quiz",
+      "title": "Bible Quiz",
+      "questions": [
+        {
+          "question": "Who built the ark?",
+          "options": ["Moses", "Noah", "David"],
+          "correct": "Noah"
+        },
+        {
+          "question": "Who was swallowed by a big fish?",
+          "options": ["Jonah", "Paul", "Peter"],
+          "correct": "Jonah"
+        }
+      ]
+    },
+    {
+      "type": "memory-verse",
+      "title": "Memory Verse",
+      "verse": "For God so loved the world... (John 3:16)",
+      "audio": "audio/bible/john_3_16.mp3"
+    },
+    {
+      "type": "interactive-puzzle",
+      "title": "Bible Puzzle",
+      "image": "images/bible/jesus_feeds_5000.png",
+      "pieces": 9
+    }
+  ]
+}

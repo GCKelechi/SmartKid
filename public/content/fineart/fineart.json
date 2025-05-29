@@ -1,0 +1,44 @@
+{
+  "age1": {
+    "activities": [
+      {
+        "type": "color-play",
+        "title": "Color Splashes",
+        "description": "Tap to splash colors on the screen."
+      },
+      {
+        "type": "shapes",
+        "title": "Shape Recognition",
+        "shapes": ["circle", "square", "triangle"]
+      }
+    ]
+  },
+  "age4": {
+    "activities": [
+      {
+        "type": "drag-color",
+        "title": "Color the Drawing",
+        "description": "Drag colors to fill the image."
+      },
+      {
+        "type": "puzzles",
+        "title": "Shape Puzzles",
+        "description": "Complete puzzles using basic shapes."
+      }
+    ]
+  },
+  "age7": {
+    "activities": [
+      {
+        "type": "drawing-lessons",
+        "title": "Draw This!",
+        "description": "Follow steps to recreate simple drawings."
+      },
+      {
+        "type": "tools-intro",
+        "title": "Art Tools Intro",
+        "description": "Learn how to use digital brushes and colors."
+      }
+    ]
+  }
+}
