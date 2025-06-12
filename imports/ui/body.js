@@ -1,5 +1,5 @@
 import { Template } from 'meteor/templating';
-import './body.html'; // Update this if you renamed the file to main.html or something else
+import './body.html';
 
 Template.homePage.events({
   'click #child1, click #child2, click #child3': function (event) {
@@ -17,5 +17,16 @@ Template.homePage.events({
   'click #explorer-mode': function () {
     console.log('Loading Explorer Mode activities...');
     // Load Explorer Mode activities here
+  },
+  'click #logout-button': function () {
+    Meteor.logout((err) => {
+      if (err) {
+        console.error('Logout failed', err);
+      } else {
+        console.log('Logged out successfully');
+        // Optionally redirect after logout
+        // Router.go('/'); // Uncomment if using a router
+      }
+    });
   }
 });

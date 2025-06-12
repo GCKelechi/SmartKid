@@ -14,13 +14,33 @@ body {
 }
 
 /* Container holding your main content */
-#main-container {
+.container {
   background: rgba(255, 255, 255, 0.85); /* Slightly transparent white box */
   padding: 30px 50px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   max-width: 600px;
   width: 90%;
+}
+
+/* Sign-Up and Login Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
 }
 
 /* Buttons styling */
@@ -87,39 +107,8 @@ h1, h2, h3 {
   background: #ffe6e3;
 }
 
-/* Body & container adjustments */
+/* Body adjustments */
 body {
   padding-top: 60px; /* leave space for navbar */
-  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  color: #444;
-}
-
-.container {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 30px 50px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  max-width: 600px;
-  margin: 30px auto;
-}
-
-/* Buttons */
-.btn {
-  background: #ff6f61;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(255, 111, 97, 0.5);
-  transition: background-color 0.3s ease;
-  margin: 10px 15px;
-}
-
-.btn:hover {
-  background: #ff4b3e;
 }

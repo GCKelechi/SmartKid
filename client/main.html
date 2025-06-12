@@ -1,8 +1,18 @@
-<head>
+<head> 
   <title>SmartKid</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-  {{> body}} <!-- This includes the body template -->
+  {{> navbar }}
+  {{> homePage }}
 </body>
+
+<template name="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+    <a class="navbar-brand" href="#">SmartKid</a>
+    <div class="ml-auto">
+      {{> loginButtons}}
+    </div>
+  </nav>
+</template>
