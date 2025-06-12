@@ -1,27 +1,20 @@
 import { Template } from 'meteor/templating';
-import { Howl } from 'howler';
 import './babyMode.html';
 
-Template.babyMode.onCreated(function() {
-  // Initialization code if needed
-});
-
 Template.babyMode.events({
-  'click #play-sounds'(event, instance) {
-    // Example: Play a "dog" sound
-    const sound = new Howl({
-      src: ['audio/dog.mp3']
-    });
-    sound.play();
+  'click #baby-maths'() {
+    document.getElementById('baby-activity-output').innerText = 'Maths: Let’s count together!';
   },
-
-  'click #show-colors'(event, instance) {
-    // You can add logic here for showing colors
-    alert('Showing colors activity coming soon!');
+  'click #baby-literacy'() {
+    document.getElementById('baby-activity-output').innerText = 'Literacy: Look at these fun letters!';
   },
-
-  'click #sing-song'(event, instance) {
-    // You can add logic here for singing a song
-    alert('Singing a song activity coming soon!');
+  'click #baby-fineart'() {
+    document.getElementById('baby-activity-output').innerText = 'Fine Art: Let’s play with colors!';
+  },
+  'click #baby-music'() {
+    document.getElementById('baby-activity-output').innerText = 'Music: Time to sing and dance!';
+  },
+  'click #baby-bible'() {
+    document.getElementById('baby-activity-output').innerText = 'Bible Learning: Let’s hear a Bible story!';
   }
 });

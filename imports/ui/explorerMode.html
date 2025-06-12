@@ -1,27 +1,20 @@
 <template name="explorerMode">
-  <div>
+  <div class="explorer-mode-container">
     <h2>Explorer Mode</h2>
+    <p>Select a subject to explore:</p>
 
-    <!-- Subject Selection Menu -->
-    <div class="subject-selector">
-      <h3>Select a Subject</h3>
-      <button class="btn subject-btn" data-subject="maths">Maths</button>
-      <button class="btn subject-btn" data-subject="literacy">Literacy</button>
-      <button class="btn subject-btn" data-subject="fineart">Fine Art</button>
-      <button class="btn subject-btn" data-subject="music">Music</button>
-      <button class="btn subject-btn" data-subject="bla">Bible Learning</button>
+    <!-- Subject Buttons -->
+    <div class="subject-buttons mb-3">
+      <button class="btn btn-info m-1" id="explorer-maths">Maths</button>
+      <button class="btn btn-info m-1" id="explorer-literacy">Literacy</button>
+      <button class="btn btn-info m-1" id="explorer-fineart">Fine Art</button>
+      <button class="btn btn-info m-1" id="explorer-music">Music</button>
+      <button class="btn btn-info m-1" id="explorer-bible">Bible Learning</button>
     </div>
 
-    <!-- Subject Content Area -->
-    <div id="subject-content"></div>
-
-    <!-- Example Math Question -->
-    <div class="math-question">
-      <label for="answer-input">What is 2 + 2?</label>
-      <input type="number" id="answer-input" placeholder="Enter your answer" />
-      <button id="check-answer">Check Answer</button>
+    <!-- Dynamic Subject Content Output Area -->
+    <div id="explorer-activity-output" class="mt-3">
+      <!-- Dynamic lesson content will be loaded here in the future -->
     </div>
-
-    <div id="feedback" style="margin-top: 10px; font-weight: bold;"></div>
   </div>
 </template>

@@ -1,0 +1,10 @@
+<template name="activity_story-quiz">
+  <div class="story-quiz">
+    <p><strong>{{title}}</strong></p>
+    <p>{{story}}</p>
+    <p><em>{{question}}</em></p>
+    {{#each options}}
+      <button class="option-btn" data-answer="{{this}}">{{this}}</button>
+    {{/each}}
+  </div>
+</template>

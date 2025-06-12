@@ -1,41 +1,40 @@
 <template name="bla">
   <div class="bla-container">
     <h2>Bible Learning Activities</h2>
-    
-    {{#if currentActivity}}
-      {{#ifEquals currentActivity.type "story-quiz"}}
+
+    {{#with currentActivity}}
+      {{#if (eq type "story-quiz")}}
         <div class="story-quiz">
-          <p><strong>{{currentActivity.title}}</strong></p>
-          <p>{{currentActivity.story}}</p>
-          <p><em>{{currentActivity.question}}</em></p>
-          {{#each currentActivity.options}}
+          <p><strong>{{title}}</strong></p>
+          <p>{{story}}</p>
+          <p><em>{{question}}</em></p>
+          {{#each options}}
             <button class="option-btn" data-answer="{{this}}">{{this}}</button>
           {{/each}}
         </div>
-      {{/ifEquals}}
+      {{/if}}
 
-      {{#ifEquals currentActivity.type "memory-verse"}}
+      {{#if (eq type "memory-verse")}}
         <div class="memory-verse">
           <p><strong>Memory Verse:</strong></p>
-          <blockquote>"{{currentActivity.verse}}"</blockquote>
-          <p><em>{{currentActivity.reference}}</em></p>
+          <blockquote>"{{verse}}"</blockquote>
+          <p><em>{{reference}}</em></p>
         </div>
-      {{/ifEquals}}
+      {{/if}}
 
-      {{#ifEquals currentActivity.type "puzzle"}}
+      {{#if (eq type "puzzle")}}
         <div class="puzzle">
-          <p><strong>{{currentActivity.title}}</strong></p>
-          <p>{{currentActivity.instruction}}</p>
+          <p><strong>{{title}}</strong></p>
+          <p>{{instruction}}</p>
           <input type="text" id="puzzle-answer" placeholder="Your answer here" />
           <button id="check-puzzle-answer">Check Answer</button>
         </div>
-      {{/ifEquals}}
+      {{/if}}
 
       <div id="feedback" style="margin-top: 10px; font-weight: bold;"></div>
-
       <button id="next-activity">Next Activity</button>
     {{else}}
       <p>Loading activities...</p>
-    {{/if}}
+    {{/with}}
   </div>
 </template>

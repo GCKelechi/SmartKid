@@ -1,4 +1,4 @@
-//import { Meteor } from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 import '../imports/ui/body.js';
 import '../imports/ui/babyMode.js';
 import '../imports/ui/explorerMode.js';
@@ -11,6 +11,7 @@ import '../imports/ui/music/music.js';
 import '/imports/ui/styles.css';
 import 'meteor/accounts-ui'; // Ensure this imports the accounts UI package
 import { Accounts } from 'meteor/accounts-base';
+
 
 // Configure Accounts UI
 Accounts.ui.config({

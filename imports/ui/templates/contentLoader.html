@@ -1,0 +1,13 @@
+<template name="contentLoader">
+  <div class="lesson-container">
+    <h2>{{subjectTitle}}</h2>
+
+    {{#if currentActivity}}
+      {{> Template.dynamic template=activityTemplate data=currentActivity }}
+      <div id="feedback" style="margin-top: 10px; font-weight: bold;">{{feedback}}</div>
+      <button id="next-activity">Next Activity</button>
+    {{else}}
+      <p>Loading activities...</p>
+    {{/if}}
+  </div>
+</template>

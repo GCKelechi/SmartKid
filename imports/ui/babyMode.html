@@ -1,13 +1,18 @@
 <template name="babyMode">
   <div class="baby-mode-container">
     <h2>Baby Mode</h2>
+    <p>Welcome to Baby Mode! Select a subject below:</p>
 
-    <p>Welcome to Baby Mode! Select an activity below:</p>
+    <!-- Subject Buttons -->
+    <div class="subject-buttons mb-3">
+      <button class="btn btn-info m-1" id="baby-maths">Maths</button>
+      <button class="btn btn-info m-1" id="baby-literacy">Literacy</button>
+      <button class="btn btn-info m-1" id="baby-fineart">Fine Art</button>
+      <button class="btn btn-info m-1" id="baby-music">Music</button>
+      <button class="btn btn-info m-1" id="baby-bible">Bible Learning</button>
+    </div>
 
-    <button id="play-sounds">Play Sounds</button>
-    <button id="show-colors">Show Colors</button>
-    <button id="sing-song">Sing a Song</button>
-
-    <div id="activity-output" style="margin-top: 20px;"></div>
+    <!-- Activity Output Area -->
+    <div id="baby-activity-output" class="mt-3"></div>
   </div>
 </template>

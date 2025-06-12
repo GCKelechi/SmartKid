@@ -1,29 +1,53 @@
-/* Set a vibrant gradient background for the whole page */
+/* === Global Styles === */
 body {
   background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  text-align: center; /* Center text globally */
   margin: 0;
-  padding: 0;
+  padding: 60px 0 0; /* Top space for navbar */
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertically center */
-  align-items: center; /* horizontally center */
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
 }
 
-/* Container holding your main content */
+/* === Main Container === */
 .container {
-  background: rgba(255, 255, 255, 0.85); /* Slightly transparent white box */
+  background: rgba(255, 255, 255, 0.88);
   padding: 30px 50px;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  max-width: 600px;
+  max-width: 650px;
   width: 90%;
 }
 
-/* Sign-Up and Login Form Styles */
+/* === Headings === */
+h1, h2, h3, h4 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* === Button Styling === */
+button, .btn {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px 8px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(255, 111, 97, 0.4);
+}
+
+button:hover, .btn:hover {
+  background: #ff4b3e;
+  transform: scale(1.02);
+}
+
+/* === Form Inputs === */
 form {
   display: flex;
   flex-direction: column;
@@ -39,35 +63,56 @@ form input {
   border-radius: 5px;
 }
 
-form button {
-  width: 100%;
+/* === Select Dropdowns === */
+select.form-control {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease;
 }
 
-/* Buttons styling */
-button, .btn {
-  background: #ff6f61;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  margin: 10px 15px;
-  border-radius: 30px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 8px rgba(255, 111, 97, 0.5);
+select.form-control:focus {
+  border-color: #ff6f61;
+  outline: none;
 }
 
-button:hover, .btn:hover {
-  background: #ff4b3e;
+/* === Profile Management Hover Reveal === */
+.user-profile {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+  transition: box-shadow 0.3s ease;
 }
 
-/* Optional: style your headings */
-h1, h2, h3 {
-  color: #444;
-  margin-bottom: 20px;
+.user-profile:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Navbar styles */
+.profile-details {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+.user-profile:hover .profile-details {
+  opacity: 1;
+  max-height: 200px;
+}
+
+/* === Activities Section === */
+#activities-container {
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* === Navbar Styles (Optional/Extendable) === */
 .navbar {
   position: fixed;
   top: 0;
@@ -79,7 +124,6 @@ h1, h2, h3 {
   padding: 12px 30px;
   box-shadow: 0 4px 8px rgba(255, 111, 97, 0.4);
   z-index: 1000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
 
@@ -95,8 +139,6 @@ h1, h2, h3 {
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 16px;
-  border: none;
-  cursor: pointer;
   background: #fff;
   color: #ff6f61;
   font-weight: 600;
@@ -105,10 +147,4 @@ h1, h2, h3 {
 
 .nav-right button:hover {
   background: #ffe6e3;
-}
-
-/* Body adjustments */
-body {
-  padding-top: 60px; /* leave space for navbar */
-  margin: 0;
 }

@@ -1,11 +1,25 @@
 <template name="profile">
   <div class="container">
-    <h2>Create Profile</h2>
+    <h2>Create or Edit Profile</h2>
+    
+    <!-- Profile Form -->
     <form id="profile-form">
       <input type="file" name="profilePicture" accept="image/*" required>
       <input type="text" name="age" placeholder="Age" required>
       <input type="text" name="username" placeholder="Username" required>
       <button type="submit" class="btn">Create Profile</button>
     </form>
+
+    <!-- Edit Profile Section (initially hidden) -->
+    <div id="edit-profile-form" style="display: none;">
+      <h3>Edit Profile</h3>
+      <form id="edit-profile">
+        <input type="file" name="editProfilePicture" accept="image/*">
+        <input type="text" name="editAge" placeholder="Age" required>
+        <input type="text" name="editUsername" placeholder="Username" required>
+        <button type="submit" class="btn">Save Changes</button>
+        <button type="button" id="cancel-edit" class="btn">Cancel</button>
+      </form>
+    </div>
   </div>
 </template>
